@@ -32,3 +32,8 @@ Route::middleware(['auth','user-access:1'])->group(function () {
 
 
 Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+Route::get('/jobcategory', [AdminController::class, 'jobcategory'])->name('admin.jobcategory');
+Route::get('/jobs', [AdminController::class, 'jobs'])->name('admin.jobs');
+Route::get('/forms', [AdminController::class, 'forms'])->name('admin.forms');
+Route::get('/questions', [AdminController::class, 'questions'])->name('admin.questions');
+Route::get('/answers', [AdminController::class, 'answers'])->name('admin.answers');

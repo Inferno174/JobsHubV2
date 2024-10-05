@@ -10,14 +10,14 @@
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="author" content="DexignZone">
+	{{-- <meta name="author" content="DexignZone">
 	<meta name="robots" content="">
 	<meta name="keywords" content="job portal, admin dashboard, Bootstrap HTML template, job listings, applicants, user-friendly interface, powerful functionalities">
 	<meta name="description" content="Qerza is a versatile job portal admin dashboard powered by Bootstrap HTML. Streamline job listings, applicants, and enhance your recruitment process. User-friendly interface with powerful functionalities. Job portal, admin dashboard, Bootstrap HTML template.">
 	<meta property="og:title" content="Qerza - Job Portal Admin Dashboard | Bootstrap HTML Template">
 	<meta property="og:description" content="Qerza is a versatile job portal admin dashboard powered by Bootstrap HTML. Streamline job listings, applicants, and enhance your recruitment process. User-friendly interface with powerful functionalities. Job portal, admin dashboard, Bootstrap HTML template.">
 	<meta property="og:image" content="social-image.png">
-	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="telephone=no"> --}}
 
 	<!-- Mobile Specific -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -739,25 +739,19 @@
         <div class="deznav">
             <div class="deznav-scroll">
 				<ul class="metismenu" id="menu">
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li><a class="" href="{{route('admin.dashboard')}}" aria-expanded="false">
 							<i class="flaticon-381-networking"></i>
 							<span class="nav-text">Dashboard</span>
 						</a>
-                        <ul aria-expanded="false">
+                        {{-- <ul aria-expanded="false">
 							<li><a href="index.html">Dashboard Light</a></li>
-							<li><a href="index2.html">Dashboard Dark</a></li>
-							<li><a href="search-job.html">Search Job</a></li>
-							<li><a href="application.html">Application</a></li>
-							<li><a href="profile.html">Profile</a></li>
-							<li><a href="statistics.html">Statistics</a></li>
-							<li><a href="companies.html">Companies</a></li>
-						</ul>
+						</ul> --}}
                     </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li><a class="" href="{{route('admin.jobcategory')}}" aria-expanded="false">
 							<i class="flaticon-381-television"></i>
-							<span class="nav-text">Apps</span>
+							<span class="nav-text">Job Category</span>
 						</a>
-                        <ul aria-expanded="false">
+                        {{-- <ul aria-expanded="false">
                             <li><a href="app-profile.html">Profile</a></li>
 							<li><a href="post-details.html">Post Details</a></li>
                             <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
@@ -779,51 +773,40 @@
 									<li><a href="ecom-customers.html">Customers</a></li>
                                 </ul>
                             </li>
-                        </ul>
+                        </ul> --}}
                     </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li><a class="" href="{{route('admin.jobs')}}" aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Charts</span>
+							<span class="nav-text">Jobs</span>
 						</a>
-                        <ul aria-expanded="false">
+                        {{-- <ul aria-expanded="false">
                             <li><a href="chart-flot.html">Flot</a></li>
                             <li><a href="chart-morris.html">Morris</a></li>
                             <li><a href="chart-chartjs.html">Chartjs</a></li>
                             <li><a href="chart-chartist.html">Chartist</a></li>
                             <li><a href="chart-sparkline.html">Sparkline</a></li>
                             <li><a href="chart-peity.html">Peity</a></li>
-                        </ul>
+                        </ul> --}}
                     </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-internet"></i>
-							<span class="nav-text">Bootstrap</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="ui-accordion.html">Accordion</a></li>
-                            <li><a href="ui-alert.html">Alert</a></li>
-                            <li><a href="ui-badge.html">Badge</a></li>
-                            <li><a href="ui-button.html">Button</a></li>
-                            <li><a href="ui-modal.html">Modal</a></li>
-                            <li><a href="ui-button-group.html">Button Group</a></li>
-                            <li><a href="ui-list-group.html">List Group</a></li>
-                            <li><a href="ui-media-object.html">Media Object</a></li>
-                            <li><a href="ui-card.html">Cards</a></li>
-                            <li><a href="ui-carousel.html">Carousel</a></li>
-                            <li><a href="ui-dropdown.html">Dropdown</a></li>
-                            <li><a href="ui-popover.html">Popover</a></li>
-                            <li><a href="ui-progressbar.html">Progressbar</a></li>
-                            <li><a href="ui-tab.html">Tab</a></li>
-                            <li><a href="ui-typography.html">Typography</a></li>
-                            <li><a href="ui-pagination.html">Pagination</a></li>
-                            <li><a href="ui-grid.html">Grid</a></li>
 
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li><a class="" href="{{route('admin.forms')}}" aria-expanded="false">
+                        <i class="flaticon-381-notepad"></i>
+                        <span class="nav-text">Forms</span>
+                    </a>
+                    {{-- <ul aria-expanded="false">
+                        <li><a href="form-element.html">Form Elements</a></li>
+                        <li><a href="form-wizard.html">Wizard</a></li>
+                        <li><a href="form-editor-summernote.html">Summernote</a></li>
+                        <li><a href="form-pickers.html">Pickers</a></li>
+                        <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
+                    </ul> --}}
+                </li>
+
+                    <li><a class="" href="{{route('admin.questions')}}" aria-expanded="false">
 							<i class="flaticon-381-heart"></i>
-							<span class="nav-text">Plugins</span>
+							<span class="nav-text">Questions</span>
 						</a>
-                        <ul aria-expanded="false">
+                        {{-- <ul aria-expanded="false">
                             <li><a href="uc-select2.html">Select 2</a></li>
                             <li><a href="uc-nestable.html">Nestedable</a></li>
                             <li><a href="uc-noui-slider.html">Noui Slider</a></li>
@@ -831,57 +814,17 @@
                             <li><a href="uc-toastr.html">Toastr</a></li>
                             <li><a href="map-jqvmap.html">Jqv Map</a></li>
                             <li><a href="uc-lightgallery.html">Lightgallery</a></li>
-                        </ul>
+                        </ul> --}}
                     </li>
-                    <li><a href="widget-basic.html" class="ai-icon" aria-expanded="false">
+                    <li><a href="{{route('admin.answers')}}" class="ai-icon" aria-expanded="false">
 							<i class="flaticon-381-settings-2"></i>
-							<span class="nav-text">Widget</span>
+							<span class="nav-text">Answers</span>
 						</a>
 					</li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-notepad"></i>
-							<span class="nav-text">Forms</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="form-element.html">Form Elements</a></li>
-                            <li><a href="form-wizard.html">Wizard</a></li>
-                            <li><a href="form-editor-summernote.html">Summernote</a></li>
-                            <li><a href="form-pickers.html">Pickers</a></li>
-                            <li><a href="form-validation-jquery.html">Jquery Validate</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-network"></i>
-							<span class="nav-text">Table</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-                            <li><a href="table-datatable-basic.html">Datatable</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
-							<i class="flaticon-381-layer-1"></i>
-							<span class="nav-text">Pages</span>
-						</a>
-                        <ul aria-expanded="false">
-                            <li><a href="page-register.html">Register</a></li>
-                            <li><a href="page-login.html">Login</a></li>
-                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
-                                <ul aria-expanded="false">
-                                    <li><a href="page-error-400.html">Error 400</a></li>
-                                    <li><a href="page-error-403.html">Error 403</a></li>
-                                    <li><a href="page-error-404.html">Error 404</a></li>
-                                    <li><a href="page-error-500.html">Error 500</a></li>
-                                    <li><a href="page-error-503.html">Error 503</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="page-lock-screen.html">Lock Screen</a></li>
-                        </ul>
-                    </li>
                 </ul>
 
 				<div class="copyright">
-					<p><strong>Qerza Job Portal Admin Dashboard</strong> © 2023 All Rights Reserved</p>
+					<p><strong>Jobshub Job Portal Admin Dashboard</strong> © 2024 All Rights Reserved</p>
 					<p>Made with <span class="heart"></span> by DexignZone</p>
 				</div>
 			</div>
