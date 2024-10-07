@@ -837,7 +837,9 @@
             Content body start
         ***********************************-->
         <div class="content-body">
-            @yield('content')
+            <div class="container-fluid">
+                @yield('content')
+            </div>
         </div>
 
         <!--**********************************
@@ -881,6 +883,10 @@
 
 	<!-- Chart piety plugin files -->
     <script src="assets/admin/vendor/peity/jquery.peity.min.js"></script>
+       <!-- Datatable -->
+    <script src="assets/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="assets/admin/js/plugins-init/datatables.init.js"></script>
+
 
 	<!-- Apex Chart -->
 	<script src="assets/admin/vendor/apexchart/apexchart.js"></script>
