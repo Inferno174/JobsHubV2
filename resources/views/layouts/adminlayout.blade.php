@@ -21,7 +21,9 @@
 
 	<!-- Mobile Specific -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
 	<!-- Favicon icon -->
 	<link rel="icon" type="image/png" href="assets/admin/assets/admin/images/favicon.png">
     <link href="assets/admin/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
@@ -875,6 +877,11 @@
     <!--**********************************
         Scripts
     ***********************************-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Required vendors -->
      <script src="assets/admin/vendor/global/global.min.js"></script>
 	<script src="assets/admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
@@ -884,8 +891,6 @@
 	<!-- Chart piety plugin files -->
     <script src="assets/admin/vendor/peity/jquery.peity.min.js"></script>
        <!-- Datatable -->
-    <script src="assets/admin/vendor/datatables/js/jquery.dataTables.min.js"></script>
-    <script src="assets/admin/js/plugins-init/datatables.init.js"></script>
 
 
 	<!-- Apex Chart -->

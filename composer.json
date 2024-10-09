@@ -11,6 +11,7 @@
         "laravel/tinker": "^2.9",
         "laravel/ui": "^4.5",
         "shuchkin/simplexlsx": "^1.1",
+        "yajra/laravel-datatables": "^11.0",
         "yoeunes/toastr": "^3.0"
     },
     "require-dev": {
