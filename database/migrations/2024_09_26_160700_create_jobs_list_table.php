@@ -17,6 +17,8 @@ return new class extends Migration
             $table->foreign('job_category_id')->references('id')->on('job_categories')->onDelete('cascade');
             $table->string('job_name')->nullable();
             $table->tinyInteger('status')->nullable();
+            $table->Integer('created_by')->nullable();
+            $table->Integer('updated_by')->nullable();
             $table->timestamps();
         });
     }

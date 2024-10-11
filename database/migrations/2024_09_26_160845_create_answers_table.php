@@ -17,6 +17,8 @@ return new class extends Migration
             $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade');
             $table->string('answers')->nullable();
             $table->tinyInteger('status')->default(1);
+            $table->Integer('created_by')->nullable();
+            $table->Integer('updated_by')->nullable();
             $table->timestamps();
         });
     }

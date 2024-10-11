@@ -19,6 +19,8 @@ return new class extends Migration
             $table->foreign('job_id')->references('id')->on('jobs_list')->onDelete('cascade');
             $table->string('company_ids')->nullable();
             $table->tinyInteger('status')->default(1);
+            $table->Integer('created_by')->nullable();
+            $table->Integer('updated_by')->nullable();
             $table->timestamps();
         });
     }

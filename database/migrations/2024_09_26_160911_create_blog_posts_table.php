@@ -29,6 +29,8 @@ return new class extends Migration
             $table->string('blog_description_english')->nullable();
             $table->string('blog_description_hindi')->nullable();
             $table->tinyInteger('status')->default(1);
+            $table->Integer('created_by')->nullable();
+            $table->Integer('updated_by')->nullable();
             $table->timestamps();
         });
     }

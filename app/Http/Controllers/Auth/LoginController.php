@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -16,7 +17,7 @@ class LoginController extends Controller
     | redirecting them to your home screen. The controller uses a trait
     | to conveniently provide its functionality to your applications.
     |
-    */
+     */
 
     use AuthenticatesUsers;
 
@@ -36,5 +37,31 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
         $this->middleware('auth')->only('logout');
+    }
+
+    public function login(Request $request)
+    {
+        //  dd($request->all());
+        $input = $request->all();
+        $this->validate($request, [
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
+        if (auth()->attempt(array('email' => $input['email'], 'password' => $input['password']))) {
+
+            if (auth()->user()->account_type == 1) // 1=> User
+            {
+                return redirect()->route('user.home');
+            } else if (auth()->user()->account_type == 2) // 2=> Admin
+            {
+                return redirect()->route('admin.dashboard');
+            } else {
+                return redirect()->route('user.home');
+
+            }
+        } else {
+            return redirect()->route('login')->with('error', 'Invalid Credentials');
+        }
     }
 }

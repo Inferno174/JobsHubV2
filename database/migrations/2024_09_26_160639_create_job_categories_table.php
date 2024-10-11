@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('job_category');
             $table->tinyInteger('status')->default(1);
+            $table->Integer('created_by')->nullable();
+            $table->Integer('updated_by')->nullable();
             $table->timestamps();
         });
     }

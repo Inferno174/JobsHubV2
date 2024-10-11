@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('company_insta')->nullable();
             $table->string('company_linkedin')->nullable();
             $table->tinyInteger('status')->default(1);
+            $table->Integer('created_by')->nullable();
+            $table->Integer('updated_by')->nullable();
             $table->timestamps();
         });
     }

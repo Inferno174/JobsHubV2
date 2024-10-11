@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Middleware;
-
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -20,7 +19,7 @@ class UserAccess
     {
         if(Auth::check())
         {
-            if (auth()->user()->type == $type) {
+            if (auth()->user()->account_type == $type) {
                 return $next($request);
             }
             return response()->json([

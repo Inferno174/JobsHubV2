@@ -17,6 +17,8 @@ return new class extends Migration
             $table->foreign('form_id')->references('id')->on('forms')->onDelete('cascade');
             $table->string('question')->nullable();
             $table->tinyInteger('status')->default(1);
+            $table->Integer('created_by')->nullable();
+            $table->Integer('updated_by')->nullable();
             $table->timestamps();
         });
     }
