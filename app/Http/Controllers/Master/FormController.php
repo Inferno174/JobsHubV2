@@ -2,25 +2,32 @@
 
 namespace App\Http\Controllers\Master;
 
-use App\Http\Controllers\Controller;
+use App\Models\Master\Forms;
 use Illuminate\Http\Request;
+use App\Models\Master\JobsList;
+use App\Http\Controllers\Controller;
 
 class FormController extends Controller
 {
-    public function forms(Request $request)
+    private $job;
+    private $form;
+
+    public function __construct()
+    {
+        $this->job = new JobsList();
+        $this->form = new Forms();
+    }
+
+    public function List()
     {
         try {
-            if ($request->ajax()) {
-                $users = User::query();
-                return datatables()->of($users)->addIndexColumn()->make(true);
-            }
+
+            $jobs_list = $this->job->get();
+            return view('Master.Forms.index',compact('jobs_list'));
+
+
         } catch (\Exception $e) {
             dd($ex);
-            return response()->json([
-                'error' => 'An error occurred while fetching data: ' . $e->getMessage(),
-            ], 500);
         }
-
-        return view('admin.forms');
     }
 }

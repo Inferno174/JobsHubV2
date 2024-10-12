@@ -25,6 +25,7 @@ class JobController extends Controller
         return view('Master.Job.index', compact('Category','jobs'));
     }
 
+
     public function Add(Request $request)
     {
         try{
