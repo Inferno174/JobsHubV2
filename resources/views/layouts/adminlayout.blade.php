@@ -25,12 +25,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
 	<!-- Favicon icon -->
-	<link rel="icon" type="image/png" href="assets/admin/assets/admin/images/favicon.png">
+	<link rel="icon" type="image/png" href="{{ asset('assets/admin/images/favicon.png') }}">
     <link href="assets/admin/vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="assets/admin/vendor/chartist/css/chartist.min.css">
-    <link href="assets/admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-	<link href="assets/admin/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="assets/admin/css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="{{ asset('assets/admin/vendor/chartist/css/chartist.min.css') }}">
+    <link href="{{ asset('assets/admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css') }}" rel="stylesheet">
+	<link href="{{ asset('assets/admin/vendor/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/admin/css/style.css') }}" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
 </head>
 <body>
@@ -113,7 +113,7 @@
 									<li class="active dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -125,7 +125,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/2.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/2.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -137,7 +137,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/3.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/3.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -149,7 +149,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/4.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/4.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -162,7 +162,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/5.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/5.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -174,7 +174,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -186,7 +186,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/2.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/2.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -199,7 +199,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/3.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/3.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -211,7 +211,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/4.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/4.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -224,7 +224,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/5.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/5.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -236,7 +236,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -248,7 +248,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/2.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/2.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -260,7 +260,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/3.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/3.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon"></span>
 											</div>
 											<div class="user_info">
@@ -273,7 +273,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/assets/admin/images/avatar/4.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/assets/admin/images/avatar/4.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -285,7 +285,7 @@
 									<li class="dz-chat-user">
 										<div class="d-flex bd-highlight">
 											<div class="img_cont">
-												<img src="assets/admin/images/avatar/5.jpg" class="rounded-circle user_img" alt="">
+												<img src="{{ asset('assets/admin/images/avatar/5.jpg') }}" class="rounded-circle user_img" alt="">
 												<span class="online_icon offline"></span>
 											</div>
 											<div class="user_info">
@@ -319,7 +319,7 @@
 							<div class="card-body msg_card_body dz-scroll" id="DZ_W_Contacts_Body3">
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										Hi, how are you samim?
@@ -332,12 +332,12 @@
 										<span class="msg_time_send">8:55 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-								<img src="assets/admin/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="">
+								<img src="{{ asset('assets/admin/images/avatar/2.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										I am good too, thank you for your chat template
@@ -350,12 +350,12 @@
 										<span class="msg_time_send">9:05 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-								<img src="assets/admin/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="">
+								<img src="{{ asset('assets/admin/images/avatar/2.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										I am looking for your next templates
@@ -368,12 +368,12 @@
 										<span class="msg_time_send">9:10 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/2.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										Bye, see you
@@ -382,7 +382,7 @@
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										Hi, how are you samim?
@@ -395,12 +395,12 @@
 										<span class="msg_time_send">8:55 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-								<img src="assets/admin/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="">
+								<img src="{{ asset('assets/admin/images/avatar/2.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										I am good too, thank you for your chat template
@@ -413,12 +413,12 @@
 										<span class="msg_time_send">9:05 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-								<img src="assets/admin/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="">
+								<img src="{{ asset('assets/admin/images/avatar/2.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										I am looking for your next templates
@@ -431,12 +431,12 @@
 										<span class="msg_time_send">9:10 AM, Today</span>
 									</div>
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/2.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/2.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 								</div>
 								<div class="d-flex justify-content-start mb-4">
 									<div class="img_cont_msg">
-										<img src="assets/admin/images/avatar/1.jpg" class="rounded-circle user_img_msg" alt="">
+										<img src="{{ asset('assets/admin/images/avatar/1.jpg') }}" class="rounded-circle user_img_msg" alt="">
 									</div>
 									<div class="msg_cotainer">
 										Bye, see you
@@ -625,7 +625,7 @@
 											<li>
 												<div class="timeline-panel">
 													<div class="media me-2">
-														<img alt="image" width="50" src="assets/admin/images/avatar/1.jpg">
+														<img alt="image" width="50" src="{{ asset('assets/admin/images/avatar/1.jpg') }}">
 													</div>
 													<div class="media-body">
 														<h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -658,7 +658,7 @@
 											 <li>
 												<div class="timeline-panel">
 													<div class="media me-2">
-														<img alt="image" width="50" src="assets/admin/images/avatar/1.jpg">
+														<img alt="image" width="50" src="{{ asset('assets/admin/images/avatar/1.jpg') }}">
 													</div>
 													<div class="media-body">
 														<h6 class="mb-1">Dr sultads Send you Photo</h6>
@@ -709,7 +709,7 @@
 										<span class="text-black"><strong>David Heree</strong></span>
 										<p class="fs-12 mb-0">Super Admin</p>
 									</div>
-                                    <img src="assets/admin/images/profile/17.jpg" width="20" alt="">
+                                    <img src="{{ asset('assets/admin/images/profile/17.jpg') }}" width="20" alt="">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-end">
                                     <a href="app-profile.html" class="dropdown-item ai-icon">
@@ -883,24 +883,24 @@
     <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Required vendors -->
-     <script src="assets/admin/vendor/global/global.min.js"></script>
-	<script src="assets/admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	<script src="assets/admin/vendor/chart-js/chart.bundle.min.js"></script>
-	<script src="assets/admin/vendor/owl-carousel/owl.carousel.js"></script>
+     <script src="{{ asset('assets/admin/vendor/global/global.min.js') }}"></script>
+	<script src="{{ asset('assets/admin/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+	<script src="{{ asset('assets/admin/vendor/chart-js/chart.bundle.min.js') }}"></script>
+	<script src="{{ asset('assets/admin/vendor/owl-carousel/owl.carousel.js') }}"></script>
 
 	<!-- Chart piety plugin files -->
-    <script src="assets/admin/vendor/peity/jquery.peity.min.js"></script>
+    <script src="{{ asset('assets/admin/vendor/peity/jquery.peity.min.js') }}"></script>
        <!-- Datatable -->
 
 
 	<!-- Apex Chart -->
-	<script src="assets/admin/vendor/apexchart/apexchart.js"></script>
+	<script src="{{ asset('assets/admin/vendor/apexchart/apexchart.js') }}"></script>
 
 	<!-- Dashboard 1 -->
-	<script src="assets/admin/js/dashboard/dashboard-1.js"></script>
-	<script src="assets/admin/js/custom.min.js"></script>
-	<script src="assets/admin/js/deznav-init.js"></script>
-	<script src="assets/admin/js/demo.js"></script>
+	<script src="{{ asset('assets/admin/js/dashboard/dashboard-1.js') }}"></script>
+	<script src="{{ asset('assets/admin/js/custom.min.js') }}"></script>
+	<script src="{{ asset('assets/admin/js/deznav-init.js') }}"></script>
+	<script src="{{ asset('assets/admin/js/demo.js') }}"></script>
      {{-- <script src="assets/admin/js/styleSwitcher.js"></script> --}}
 </body>
 
