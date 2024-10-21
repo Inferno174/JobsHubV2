@@ -14,8 +14,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/theme/favicon.svg" />
     <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="{{ asset('assets/css/plugins/animate.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
 </head>
 <body>
     <!-- Preloader Start -->
@@ -23,7 +23,7 @@
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="text-center">
-                    <img src="assets/imgs/theme/loading.gif" alt="jobhub" />
+                    <img src="{{ asset('assets/imgs/theme/loading.gif') }}" alt="jobhub" />
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="main-header">
                 <div class="header-left">
                     <div class="header-logo">
-                        <a href="index.html" class="d-flex"><img alt="jobhub" src="assets/imgs/theme/jobhub-logo.svg" /></a>
+                        <a href="index.html" class="d-flex"><img alt="jobhub" src="{{ asset('assets/imgs/theme/jobhub-logo.svg') }}" /></a>
                     </div>
                     <div class="header-nav">
                         <nav class="nav-main-menu d-none d-xl-block">
@@ -81,7 +81,7 @@
         <div class="mobile-header-wrapper-inner">
             <div class="mobile-header-top">
                 <div class="user-account">
-                    <img src="assets/imgs/avatar/ava_1.png" alt="jobhub" />
+                    <img src="{{ asset('assets/imgs/avatar/ava_1.png') }}" alt="jobhub" />
                     <div class="content">
                         <h6 class="user-name">Howdy, <span class="text-brand">Melvin Rosario</span></h6>
                         <p class="font-xs text-muted">You have 2 new messages</p>
@@ -141,11 +141,11 @@
                     </div>
                     <div class="mobile-social-icon mb-50">
                         <h6 class="mb-25">Follow Us</h6>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-facebook.svg" alt="jobhub" /></a>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-twitter.svg" alt="jobhub" /></a>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-instagram.svg" alt="jobhub" /></a>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-pinterest.svg" alt="jobhub" /></a>
-                        <a href="#"><img src="assets/imgs/theme/icons/icon-youtube.svg" alt="jobhub" /></a>
+                        <a href="#"><img src="{{ asset('assets/imgs/theme/icons/icon-facebook.svg') }}" alt="jobhub" /></a>
+                        <a href="#"><img src="{{ asset('assets/imgs/theme/icons/icon-twitter.svg') }}" alt="jobhub" /></a>
+                        <a href="#"><img src="{{ asset('assets/imgs/theme/icons/icon-instagram.svg') }}" alt="jobhub" /></a>
+                        <a href="#"><img src="{{ asset('assets/imgs/theme/icons/icon-pinterest.svg') }}" alt="jobhub" /></a>
+                        <a href="#"><img src="{{ asset('assets/imgs/theme/icons/icon-youtube.svg') }}" alt="jobhub" /></a>
                     </div>
                     <div class="site-copyright">Copyright 2022 © JobHub. <br />Designed by AliThemes.</div>
                 </div>
@@ -163,7 +163,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
-                    <a href="index.html"><img alt="jobhub" src="assets/imgs/theme/jobhub-logo.svg" /></a>
+                    <a href="index.html"><img alt="jobhub" src="{{ asset('assets/imgs/theme/jobhub-logo.svg') }}" /></a>
                     <div class="mt-20 mb-20">Jobhub is the heart of the design community and the best resource to discover and connect with designers and jobs worldwide.</div>
                 </div>
                 <div class="col-md-2 col-xs-6">
@@ -222,20 +222,20 @@
     </footer>
     <!-- End Footer -->
     <!-- Vendor JS-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/plugins/waypoints.js"></script>
-    <script src="assets/js/plugins/wow.js"></script>
-    <script src="assets/js/plugins/magnific-popup.js"></script>
-    <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/plugins/select2.min.js"></script>
-    <script src="assets/js/plugins/isotope.js"></script>
-    <script src="assets/js/plugins/scrollup.js"></script>
-    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="{{ asset('assets/js/vendor/modernizr-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-migrate-3.3.0.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/waypoints.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/wow.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/magnific-popup.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/perfect-scrollbar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/select2.min.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/isotope.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/scrollup.js') }}"></script>
+    <script src="{{ asset('assets/js/plugins/swiper-bundle.min.js') }}"></script>
     <!-- Template  JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
 
 </html>
