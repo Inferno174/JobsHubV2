@@ -68,37 +68,18 @@
                 </div>
                 <div class="modal-body">
                     <div class="basic-form">
-                        <form action="{{ admin_url('/admin/forms/add/submit') }}" method="POST"
+                        <form action="{{ admin_url('/admin/jobs/add/submit') }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
-                            <div class="form-group mb-2">
-                                <label>Job Category</label>
-                                <select name="job_category" class="form-control default-select">
-                                    <option value="" selected>Select Job Category</option>
-                                    @foreach ($job_cat as $jobcategory)
-                                        <option value="{{ encryptId($jobcategory->id) }}">{{ $jobcategory->job_category }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                                @if ($errors->has('job_category'))
-                                    <span class="text-danger">{{ $errors->first('job_category') }}</span>
-                                @endif
-                            </div>
-                            <div class="form-group">
-                                <label>Form Name</label>
-                                <input type="text" name="form_name" class="form-control" placeholder="Enter Form Name">
-                                @if ($errors->has('form_name'))
-                                    <span class="text-danger">{{ $errors->first('form_name') }}</span>
-                                @endif
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Create</button>
-                            </div>
-                        </form>
+
+
                     </div>
                 </div>
-
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+                </form>
             </div>
         </div>
     </div>
@@ -109,19 +90,23 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Froms Details</h4>
+                    <h4 class="card-title">Jobs Details</h4>
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table id="dataTable" class="table table-striped table-bordered data-table" style="width:100%">
+                        <table id="example3" class="w-100">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
+                                    <th>Sno</th>
+                                    <th>Job Category</th>
+                                    <th>Job</th>
+                                    <th>Status</th>
+                                    <th>Created By</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!-- Data will be loaded dynamically -->
+                               
                             </tbody>
                         </table>
                     </div>
@@ -129,32 +114,6 @@
             </div>
         </div>
     </div>
-    <!-- jQuery should be loaded first -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- DataTables JavaScript -->
-    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
-
-    <!-- Your own DataTable initialization -->
-    <script>
-        $(document).ready(function() {
-            $('#example3').DataTable({
-                processing: true,
-                serverSide: true,
-                ajax: '{{ route('admin.forms') }}',
-                columns: [{
-                        data: 'name',
-                        name: 'name'
-                    },
-                    {
-                        data: 'email',
-                        name: 'email'
-                    }
-                ]
-            });
-        });
-    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const filterButton = document.getElementById('filter-button');

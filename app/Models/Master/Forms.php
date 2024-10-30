@@ -26,5 +26,12 @@ class Forms extends Model
     public function store()
     {
         $request = request();
+
+        $insert_array = array(
+            'job_category_id' => decryptId($request->job_category),
+            'form_name' => $request->form_name,
+        );
+
+        return $this->create($insert_array);
     }
 }

@@ -30,7 +30,6 @@ class JobCategoryController extends Controller
 
     public function Add(Request $request)
     {
-        // dd($request->all());
         try{
 
             $rules = [

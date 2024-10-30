@@ -1,15 +1,15 @@
 <?php
 
-use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Master\AnswerController;
-use App\Http\Controllers\Master\FormController;
-use App\Http\Controllers\Master\JobCategoryController;
-use App\Http\Controllers\Master\JobController;
-use App\Http\Controllers\Master\QuestionController;
-use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\Master\JobController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Master\BlogController;
+use App\Http\Controllers\Master\FormController;
+use App\Http\Controllers\Master\AnswerController;
+use App\Http\Controllers\Master\QuestionController;
+use App\Http\Controllers\Master\JobCategoryController;
 
 Auth::routes();
 
@@ -34,13 +34,13 @@ Route::middleware(['user_log'])->group(function () {
         Route::POST('/admin/add/jobcategory/submit', [JobCategoryController::class, 'Add']);
         Route::GET('/admin/jobcategory', [JobCategoryController::class, 'List'])->name('admin.jobcategory');
 
-        // Job Routes
-        Route::GET('/admin/jobs', [JobController::class, 'List'])->name('admin.jobs');
-        Route::POST('/admin/jobs/add/submit', [JobController::class, 'Add']);
-
         // Form Routes
         Route::GET('/admin/forms', [FormController::class, 'List'])->name('admin.forms');
+        Route::POST('/admin/forms/add/submit',[FormController::class, 'Add'])->name('forms.add');
 
+        // Blog Post Route 
+        Route::GET('admin/blog',[BlogController::class, 'List'])->name('admin.blog');
+        
         // Answer Routes
         Route::GET('/admin/answers', [AnswerController::class, 'List'])->name('admin.answers');
 

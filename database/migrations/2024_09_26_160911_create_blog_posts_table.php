@@ -8,15 +8,13 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     */
+    */
     public function up(): void
     {
         Schema::create('blog_posts', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('job_category_id');
             $table->foreign('job_category_id')->references('id')->on('job_categories')->onDelete('cascade');
-            $table->unsignedBigInteger('job_name_id');
-            $table->foreign('job_name_id')->references('id')->on('jobs_list')->onDelete('cascade');
             $table->string('blog_title_english')->nullable();
             $table->string('blog_title_hindi')->nullable();
             $table->string('blog_title_tamil')->nullable();

@@ -64,7 +64,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="basic-form">
-                        <form action="{{ env('APP_URL') }}/admin/add/jobcategory/submit" method="POST"
+                        <form action="{{ admin_url('/admin/add/jobcategory/submit') }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">

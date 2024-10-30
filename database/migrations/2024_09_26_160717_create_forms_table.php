@@ -13,12 +13,9 @@ return new class extends Migration
     {
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
-            // $table->unsignedBigInteger('job_category_id');
-            $table->unsignedBigInteger('job_id');
-            // $table->foreign('job_category_id')->references('id')->on('job_categories')->onDelete('cascade');
-            $table->foreign('job_id')->references('id')->on('jobs_list')->onDelete('cascade');
+            $table->unsignedBigInteger('job_category_id');
+            $table->foreign('job_category_id')->references('id')->on('job_categories')->onDelete('cascade');
             $table->string('form_name')->nullable();
-            // $table->string('company_ids')->nullable();
             $table->tinyInteger('status')->default(1);
             $table->Integer('created_by')->nullable();
             $table->Integer('updated_by')->nullable();

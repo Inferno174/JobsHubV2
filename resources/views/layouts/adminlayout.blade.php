@@ -777,9 +777,9 @@
                             </li>
                         </ul> --}}
                     </li>
-                    <li><a class="" href="{{route('admin.jobs')}}" aria-expanded="false">
+                    <li><a class="" href="{{ route('admin.blog') }}" aria-expanded="false">
 							<i class="flaticon-381-controls-3"></i>
-							<span class="nav-text">Jobs</span>
+							<span class="nav-text">Create Blog</span>
 						</a>
                         {{-- <ul aria-expanded="false">
                             <li><a href="chart-flot.html">Flot</a></li>
