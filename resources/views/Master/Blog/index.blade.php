@@ -71,8 +71,30 @@
                         <form action="{{ admin_url('/admin/jobs/add/submit') }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
-
-
+                            <div class="mb-3">
+                                <label for="formFileMultiple" class="form-label">Blog image</label>
+                                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                              </div>
+                              <div class="form-group">
+                                <label for="blogtitle" class="form-label">Blog title</label>
+                                <input type="text" class="form-control input-default " placeholder="Enter the blog title">
+                            </div>
+                            <div class="form-group">
+                                <label for="blogtitle" class="form-label">Blog date</label>
+                                <input type="date" name="datepicker" class="datepicker-default form-control" id="datepicker">
+                            </div>
+                            <div class="form-group">
+                                <label for="blogdescription" class="form-label">blog description</label>
+                                <textarea class="form-control" rows="8" id="comment"></textarea>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="blogdescription" class="form-label">Job type</label>
+                                <select class="form-control default-select">
+                                    <option>Part time</option>
+                                    <option>Full time</option>
+                                    <option>Temporary</option>
+                                </select>
+                            </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -106,7 +128,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                               
+
                             </tbody>
                         </table>
                     </div>

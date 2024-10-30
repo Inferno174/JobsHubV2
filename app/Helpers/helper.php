@@ -269,3 +269,10 @@ if (!function_exists('public_image')) {
         return config('constants.ADMIN_URL') . "public/assets/images/" . $value;
     }
 }
+if (!function_exists('getHost')) {
+
+    function getHost()
+    {
+        return env('APP_URL', "");
+    }
+}
