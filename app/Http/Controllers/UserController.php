@@ -30,4 +30,7 @@ class UserController extends Controller
     public function blogpreview(){
         return view('users.blogpreview');
     }
+    public function applyjob(){
+        return view('users.applyjob');
+    }
 }

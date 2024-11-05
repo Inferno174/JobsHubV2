@@ -90,7 +90,7 @@
                 <div class="single-apply-jobs">
                     <div class="row align-items-center">
                         <div class="col-md-5">
-                            <a href="#" class="btn btn-default mr-15">Apply now</a>
+                            <a href="{{route('users.applyjob')}}" class="btn btn-default mr-15">Apply now</a>
                             <a href="#" class="btn btn-border">Save job</a>
                         </div>
                         <div class="col-md-7 text-lg-end social-share">
@@ -307,7 +307,7 @@
                         We're looking to add more product designers to our growing teams.
                     </div>
                     <div class="text-start mt-20">
-                        <a href="#" class="btn btn-default mr-10">Apply now</a>
+                        <a href="{{route('users.applyjob')}}" class="btn btn-default mr-10">Apply now</a>
                         <a href="#" class="btn btn-border">Save job</a>
                     </div>
                     <div class="sidebar-list-job">

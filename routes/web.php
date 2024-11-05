@@ -23,6 +23,7 @@ Route::middleware(['user_log'])->group(function () {
     Route::GET('services', [UserController::class, 'services'])->name('users.services');
     Route::GET('contact', [UserController::class, 'contactus'])->name('users.contactus');
     Route::GET('/jobs/preview', [UserController::class, 'blogpreview'])->name('users.blogpreview');
+    Route::GET('/jobs/apply', [UserController::class, 'applyjob'])->name('users.applyjob');
 
     // Admin Routes
     Route::middleware(['auth', 'user-access:2'])->group(function () {
@@ -38,9 +39,9 @@ Route::middleware(['user_log'])->group(function () {
         Route::GET('/admin/forms', [FormController::class, 'List'])->name('admin.forms');
         Route::POST('/admin/forms/add/submit',[FormController::class, 'Add'])->name('forms.add');
 
-        // Blog Post Route 
+        // Blog Post Route
         Route::GET('admin/blog',[BlogController::class, 'List'])->name('admin.blog');
-        
+
         // Answer Routes
         Route::GET('/admin/answers', [AnswerController::class, 'List'])->name('admin.answers');
 
