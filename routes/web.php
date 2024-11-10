@@ -41,6 +41,7 @@ Route::middleware(['user_log'])->group(function () {
 
         // Blog Post Route
         Route::GET('admin/blog',[BlogController::class, 'List'])->name('admin.blog');
+        Route::POST('admin/blog/add/submit',[BlogController::class,'Add']);
 
         // Answer Routes
         Route::GET('/admin/answers', [AnswerController::class, 'List'])->name('admin.answers');

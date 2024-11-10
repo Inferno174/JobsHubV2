@@ -11,7 +11,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Job Type Constants
+        defined('FULL_TIME') or define('FULL_TIME',1);
+        defined('PART_TIME') or define('PART_TIME',2);
+        defined('CONTRACT_BASED') or define('CONTRACT_BASED',3);
     }
 
     /**

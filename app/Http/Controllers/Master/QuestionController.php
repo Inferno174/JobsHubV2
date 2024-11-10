@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class QuestionController extends Controller
 {
-    public function questions(){
+    public function List(){
         return view('admin.questions');
     }
+
 }

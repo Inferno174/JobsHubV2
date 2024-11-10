@@ -68,32 +68,70 @@
                 </div>
                 <div class="modal-body">
                     <div class="basic-form">
-                        <form action="{{ admin_url('/admin/jobs/add/submit') }}" method="POST"
+                        <form action="{{ admin_url('/admin/blog/add/submit') }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
-                                <label for="formFileMultiple" class="form-label">Blog image</label>
-                                <input class="form-control" type="file" id="formFileMultiple" multiple>
-                              </div>
-                              <div class="form-group">
-                                <label for="blogtitle" class="form-label">Blog title</label>
-                                <input type="text" class="form-control input-default " placeholder="Enter the blog title">
+                                <label for="formFileMultiple" class="form-label">Blog Image</label>
+                                <input class="form-control" name="blog_image" type="file" accept="image/*" id="formFileMultiple" multiple>
+                            </div>
+                            <div class="form-group">
+                                <label for="blogtitle" class="form-label">Blog Title (English)</label>
+                                <input type="text" name="blog_title_english" class="form-control input-default "
+                                    placeholder="Enter the blog title in English">
+                            </div>
+                            <div class="form-group">
+                                <label for="blogtitle" class="form-label">Blog Title (Tamil)</label>
+                                <input type="text" name="blog_title_tamil" class="form-control input-default "
+                                    placeholder="Enter the blog title in Tamil">
+                            </div>
+                            <div class="form-group">
+                                <label for="blogtitle" class="form-label">Blog Title (Hindi)</label>
+                                <input type="text" name="blog_title_hindi" class="form-control input-default "
+                                    placeholder="Enter the blog title in Hindi">
                             </div>
                             <div class="form-group">
                                 <label for="blogtitle" class="form-label">Blog date</label>
-                                <input type="date" name="datepicker" class="datepicker-default form-control" id="datepicker">
+                                <input type="date" name="blog_date" class="datepicker-default form-control"
+                                    id="datepicker">
                             </div>
                             <div class="form-group">
-                                <label for="blogdescription" class="form-label">blog description</label>
-                                <textarea class="form-control" rows="8" id="comment"></textarea>
+                                <label for="blogdescription" class="form-label">Blog Description (English)</label>
+                                <textarea class="form-control" name="blog_english" rows="8" id="comment"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="blogdescription" class="form-label">Blog Description (Tamil)</label>
+                                <textarea class="form-control" name="blog_tamil" rows="8" id="comment"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="blogdescription" class="form-label">Blog Description (Hindi)</label>
+                                <textarea class="form-control" name="blog_hindi" rows="8" id="comment"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="blogtitle" class="form-label">Salary</label>
+                                <input type="text" name="salary" class="form-control input-default "
+                                    placeholder="Enter the salary">
                             </div>
                             <div class="form-group mb-4">
                                 <label for="blogdescription" class="form-label">Job type</label>
-                                <select class="form-control default-select">
-                                    <option>Part time</option>
-                                    <option>Full time</option>
-                                    <option>Temporary</option>
+                                <select class="form-control default-select" name="job_type">
+                                    <option value="{{ encryptId(PART_TIME) }}">Part time</option>
+                                    <option value="{{ encryptId(FULL_TIME) }}">Full time</option>
+                                    <option value="{{ encryptId(CONTRACT_BASED) }}">Temporary</option>
                                 </select>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label>Job Category</label>
+                                <select name="job_category" class="form-control default-select">
+                                    <option value="" selected>Select Job Category</option>
+                                    @foreach ($job_cat as $jobcategory)
+                                        <option value="{{ encryptId($jobcategory->id) }}">{{ $jobcategory->job_category }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                @if ($errors->has('job_category'))
+                                    <span class="text-danger">{{ $errors->first('job_category') }}</span>
+                                @endif
                             </div>
                     </div>
                 </div>

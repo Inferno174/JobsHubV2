@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 
 class AnswerController extends Controller
 {
-    public function answers()
+    public function List()
     {
         return view('admin.answers');
     }
