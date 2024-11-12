@@ -110,21 +110,21 @@
                             </thead>
                             <tbody>
                                 @foreach ($job_category as $index => $jc)
-                                    <tr>
-                                        <td>{{ $index + 1 }}</td>
-                                        <td>{{ $jc->job_category }}</td>
-                                        <td>{{ getUserName($jc->created_by) }}</td>
-                                        <td>{{ getStatus($jc->status) }}</td>
-                                        <td>
-                                            <div class="d-flex">
-                                                <a href="#" class="btn btn-primary shadow btn-xs sharp me-1"><i
-                                                        class="fa fa-pencil"></i></a>
-                                                <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
-                                                        class="fa fa-trash"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                @endforeach
+                                <tr>
+                                    <td>{{ $index + 1 }}</td>
+                                    <td>{{ $jc->job_category }}</td>
+                                    <td>{{ getUserName($jc->created_by) }}</td>
+                                    <td>{{ getStatus($jc->status) }}</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <a href="#" class="btn btn-primary shadow btn-xs sharp me-1" id="editmodal"><i
+                                                    class="fa fa-pencil"></i></a>
+                                            <a href="#" class="btn btn-danger shadow btn-xs sharp"><i
+                                                    class="fa fa-trash"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -132,7 +132,41 @@
             </div>
         </div>
     </div>
+ <!--Edit Modal -->
+ <div class="modal fade" id="editmodal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add Job Category</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="basic-form">
+                    <form action="" method=""
+                        enctype="multipart/form-data">
+                        @csrf
+                        <div class="form-group">
+                            <label>Category Name</label>
+                            <input type="text" name="job_category" class="form-control Enter Details"
+                                placeholder="Enter Details" value="">
+                        </div>
+                        <div class="form-group">
+                            <label>Category Status</label>
+                            <input type="text" name="job_category" class="form-control Enter Details"
+                                placeholder="Enter Details" value="">
+                        </div>
+                </div>
+            </div>
 
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
     const filterButton = document.getElementById('filter-button');
