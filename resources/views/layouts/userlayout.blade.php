@@ -47,9 +47,7 @@
                                 <li class="">
                                     <a href="{{route('users.employer')}}">Employers</a>
                                 </li>
-                                <li class="">
-                                    <a href="{{route('users.blogs')}}">Job blogs</a>
-                                </li>
+
                                 <li class="">
                                     <a href="{{route('users.aboutus')}}">About us</a>
                                     {{-- <ul class="sub-menu">
