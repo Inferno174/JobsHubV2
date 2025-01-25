@@ -1,0 +1,2 @@
+Attached you will find requested report.
+<?php /**PATH C:\Users\E COM BUYER\OneDrive\Documents\GitHub\JobsHubV2\vendor\yajra\laravel-datatables-export\src\resources\views\export-email.blade.php ENDPATH**/ ?>
